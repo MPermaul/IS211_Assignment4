@@ -100,9 +100,9 @@ def generate_random_list(size):
 
 
 def main():
-    # list of the different sizes we need to test
+    # list of the different sizes we need to test and how many times to run checks
     list_sizes = [500, 1000, 10000]
-    times_to_check = 3
+    times_to_check = 100
 
     # create loop to run for each test size
     for size_value in list_sizes:

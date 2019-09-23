@@ -151,8 +151,9 @@ def main():
     # variable to store item that we will search for
     valsearch = -1
 
-    # list with the different sizes we need to create
+    # list of the different sizes we need to test and how many times to run checks
     list_sizes = [500, 1000, 10000]
+    times_to_check = 100
 
     # create loop to run each test size
     for size in list_sizes:
@@ -208,10 +209,10 @@ def main():
 
             # print message with average time to run the 100 lists
             print('\nStats Running with List of {} Items:'.format(size))
-            print('Sequential Search took {:10.7f} seconds to run, on average.'.format(running_sum1/100))
-            print('Ordered Sequential Search took {:10.7f} seconds to run, on average.'.format(running_sum2/100))
-            print('Binary Iterative Search took {:10.7f} seconds to run, on average.'.format(running_sum3/100))
-            print('Binary Recursive Search took {:10.7f} seconds to run, on average.'.format(running_sum4/100))
+            print('Sequential Search took {:10.7f} seconds to run, on average.'.format(running_sum1/times_to_check))
+            print('Ordered Sequential Search took {:10.7f} seconds to run, on average.'.format(running_sum2/times_to_check))
+            print('Binary Iterative Search took {:10.7f} seconds to run, on average.'.format(running_sum3/times_to_check))
+            print('Binary Recursive Search took {:10.7f} seconds to run, on average.'.format(running_sum4/times_to_check))
 
 
 if __name__ == '__main__':
